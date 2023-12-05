@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="All CSS/welcome.css"/>
+    <link rel="shortcut icon" href="All IMG/FASHIEE LOGO.png" type="image/x-icon" sizes="90px">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="All CSS/color_fonts_box_shadow_java_css.css" />
+    <title>E-COMS</title>
+</head>
+<body>
+        <form class="login-box" id="login-form"  >
+            <img class="login-img" src="All IMG/FASHIEE LOGO.png"/>
+
+            <div class="login-input-box" >
+                <p class="login">SIGN IN</span></p>
+
+                <ul class="input-email et1" id="java-wrong-email">
+                    <i class="email-icon email-icon material-symbols-outlined">mail</i>
+                    <input  type="email" name="none" class="email-input-text em" id="login-username" placeholder="Enter Email Required...." required/>
+                </ul>
+
+                <ul class="input-email et2" id="java-wrong-password">
+                    <i class="email-icon material-symbols-outlined">lock</i>
+                    <input type="text" name="none" class="  email-input-text ps-show-hide" id="login-password" placeholder="Enter password Required...." required>
+                </ul>
+                <a id="cj" class="pj"><button class="login-button" id="clear-users-btn">Login</button></a>
+                <p class="sign-up-text-gust"><a href="Home Dashboard.html" class="sign-up-link">Guest Here?</a></p>
+                <p class="sign-up-text">Don't have account <a  class="sign-up-link" onclick="register_show()">Sign up Here?</a></p>
+            </div>     
+        </form>
+
+        <div id="user-list" style="display: none;"></div>
+
+        <form id="register-form" class="login-box" style="display: none;">
+          <img class="login-img" src="All IMG/FASHIEE LOGO.png"/>
+            <div class="login-input-box" >
+              <p class="login">REGISTER</span></p>
+                <ul class="input-email et1" id="java-wrong-email">
+                    <i class="email-icon email-icon material-symbols-outlined" >person</i>
+                    <input class="email-input-text em" type="text" id="register-username"required placeholder="Full Name:">
+                </ul>
+
+               <ul class="input-email et2" id="java-wrong-email">
+                  <i class="email-icon email-icon material-symbols-outlined">mail</i>
+                  <input class="email-input-text em" type="email" id="register-email" required placeholder="Email:">
+               </ul>
+            
+               <ul class="input-email et2" id="java-wrong-email">
+                  <i class="email-icon email-icon material-symbols-outlined">lock</i>
+                  <input type="text" id="register-password" class="email-input-text em" required placeholder="Password">
+               </ul>   
+            
+                <button type="submit" id="register-btn" class="login-button">Register</button>
+                <p class="sign-up-text-gust"><a href="Home Dashboard.html" class="sign-up-link">Guest Here?</a></p>
+                <p class="sign-up-text" onclick="login_show()"> Already have account login here?</p>
+            </div>
+            
+        </form>
+        <script src="All JAVA/_loginJc.js"></script>
+        <div class="loading-box" onload="loadit()">
+          <img class="loading-img" src="All IMG/loading.gif" >
+      </div>
+</body>
+<script>
+  function login_show(){
+    document.querySelector("#login-form").style.display="flex";
+    document.querySelector("#register-form").style.display="none";
+  }
+
+  function register_show(){
+    document.querySelector("#register-form").style.display="flex";
+    document.querySelector("#login-form").style.display="none";
+  }
+
+  function btshow(){
+    document.querySelector("#login-password").type
+  }
+
+  let loaderscreen = document.querySelector(".loading-box");
+
+window.addEventListener("load", function(){
+    loaderscreen.style.display="none"
+})
+</script>
+<style>
+        :root{
+        --font-family: 'Golos Text', sans-serif;
+        --font-family-2: 'Stick No Bills', sans-serif;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
+    
+</style>
+<style>
+    .email-icon{
+        margin-top: 12px;
+    }
+    .sign-up-text{
+        display: flex;
+        color: black;
+        justify-content: center;
+        font-family: var(--font-family);
+        font-size: 14px;
+        column-gap:7px ;
+        margin-top: 20px;
+    }
+    .sign-up-text-gust{
+        font-family: var();
+        display: flex;
+        color: black;
+        justify-content: center;
+        font-family: var(--font-family);
+        font-size: 14px;
+        column-gap:7px ;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    .sign-up-link{
+        color: black;
+        text-decoration: underline;
+    }
+    .login{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .w-login{
+        text-align: center;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size:13px ;
+    }
+    .fg-link{
+        text-decoration: underline;
+        color: black;
+        margin-left: 10px;
+        font-size: 12px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .forgot-password-main-box{
+        padding-left: 15px;
+        border: none;
+        display: flex;
+        margin-top: 15px;
+    }
+    .checkbox{
+        margin-left: 5px;
+        font-size: 12px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+</style>
+
+<head>
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 85 || e.keyCode === 117)) {
+          return false;
+        } else {
+          return true;
+        }
+      };
+
+      document.addEventListener('keydown', function(event) {
+  if (event.keyCode == 123) { // F12 key
+    event.preventDefault();
+    document.body.innerHTML = '';
+  }
+});
+
+    </script>
+  </head>
+  
+</html>

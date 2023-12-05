@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+/*Colors*/
+:root{
+    --colors--black: black;
+    --color--black-shadowss:rgba(0, 0, 0, 0.693);
+    --colors--white:white;
+    --color--white-ad:rgba(255, 255, 255, 0.479);
+    --color--gray:#4c4c4c;
+}
+
+/*Box Shadow*/
+:root{
+ --shadow-1-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ --shadow-2-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+ --shadow-3-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+ --shadow-4-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+/*Fonts Design*/
+:root{
+  --font-family-lobs: 'Lobster', cursive;
+  --font-family-robs: 'Roboto Slab', serif;
+  --font-family-Interss: 'Inter', sans-serif;
+  --font-family-Bungee-Spice: 'Bungee Spice', cursive;
+  --font-family: 'Libre Franklin', sans-serif;
+  --font-family-bungee: 'Bungee Inline', cursive;
+  --font-family-righteous: 'Righteous', cursive;
+  --font-font-family-tilt-neon: 'Tilt Neon', cursive;
+
+}
+/*Text Shadow*/
+:root{
+  --text-shadow-Dropping-It-Elegantly: 0 2px 1px #747474, 
+  -1px 3px 1px #767676, 
+  -2px 5px 1px #787878, 
+  -3px 7px 1px #7a7a7a,
+  -4px 9px 1px #7f7f7f,
+  -5px 11px 1px #838383,
+  -6px 13px 1px #878787,
+  -7px 15px 1px #8a8a8a, 
+  -8px 17px 1px #8e8e8e,
+  -9px 19px 1px #949494,
+  -10px 21px 1px #989898,
+  -11px 23px 1px #9f9f9f,
+  -12px 25px 1px #a2a2a2, 
+  -13px 27px 1px #a7a7a7,
+  -14px 29px 1px #adadad,
+  -15px 31px 1px #b3b3b3,
+  -16px 33px 1px #b6b6b6,
+  -17px 35px 1px #bcbcbc, 
+  -18px 37px 1px #c2c2c2,
+  -19px 39px 1px #c8c8c8,
+  -20px 41px 1px #cbcbcb,
+  -21px 43px 1px #d2d2d2,
+  -22px 45px 1px #d5d5d5, 
+  -23px 47px 1px #e2e2e2,
+  -24px 49px 1px #e6e6e6,
+  -25px 51px 1px #eaeaea,
+  -26px 53px 1px #efefef;
+  --text-shadow-Smartly-Embossed: 2px 2px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3);
+}
+
+/*Hover*/
+.category-box-tops:hover{
+  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.reccomend-product-box-main::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(0, 0, 0, 0.481);
+}
+.category-bt:hover{
+  margin-left: 25px;
+}
+.buy-size-category-bt:hover{
+  background-color: var(--colors--black);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--colors--white);
+}
+.buy-buy-bt:hover,.buy-cart-bt:hover{
+  background-color: transparent;
+  color: var(--colors--black);
+  border-radius: 90px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+/*Animation*/
+@keyframes scale {
+    0%   { transform: scale(0.7) }
+    100% { transform: scale(1,1); }
+  }
+@keyframes width-effect {
+   0%   { width: 60px; }
+   90%  { width: 70px;}
+   100% { width: 50px; }
+}
+
+@keyframes wiggle {
+  0%, 7% {
+      width: 0;
+  }
+  15% {
+      width: 15.83px;
+  }
+  20% {
+      width: 31.66px;
+  }
+  25% {
+      width: 47.49px;
+  }
+  30% {
+      width: 63.32px;
+  }
+  35% {
+      width: 79.15;
+  }
+  40%, 100% {
+      width: 95px;
+}
+}
+
+
+@keyframes jc {
+0%, 13% {
+      width: 0;
+  }
+  15% {
+      width: 0;
+  }
+  20% {
+      width:0;
+  }
+  25% {
+      width: 47.49;
+  }
+  30% {
+      width: 63.32px;
+  }
+  35% {
+      width: 79.15;
+  }
+  40%, 100% {
+      width: 95px;
+}
+}
+
+@keyframes effect-22 {
+0%, 13% {
+  background-color: white;
+     color: black;
+  }
+  15% {
+      background-color: white;
+     color: black;
+  }
+  20% {
+      background-color: white;
+     color: black;
+  }
+  25% {
+      background-color: white;
+     color: black;
+  }
+  30% {
+      background-color: white;
+     color: black;
+  }
+  35% {
+      background-color: white;
+     color: black;
+  }
+  40%, 100% {
+      background-color: black;
+     color: white;
+}
+}
+
+@keyframes hideanimation {
+  0%, 13% {
+    visibility: hidden;
+    }
+    15% {
+      visibility: hidden;
+    }
+    20% {
+      visibility: hidden;
+    }
+    25% {
+      visibility: hidden;
+    }
+    30% {
+      visibility: hidden;
+    }
+    35% {
+      display: none;
+    }
+    40%, 90% {
+      visibility: hidden;
+    }
+    95%,100%{
+      visibility: visible;
+    }
+  }
+
+/*Java Css*/
+.cj{
+  display: none;
+  transition: 1s;
+}
+.category-java-2{
+  margin-left: 0;
+  transition: 1s;
+}
+
+/*scroll bar*/
+.reccomend-product-box-main::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+  margin: 0;
+}
+.reccomend-product-box-main::-webkit-scrollbar-thumb{
+  background-color: var(--colors--black);
+  border-radius: 20px;
+}
+.reccomend-product-box-main::-webkit-scrollbar-track{
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color:transparent;       
+}
+
+
+body::-webkit-scrollbar{
+  width: 5px;
+  margin: 0;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: var(--colors--black);
+}
+body::-webkit-scrollbar-track{
+  display: block;
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.menu-box-category::-webkit-scrollbar{
+  width: 5px;
+  margin: 0;
+}
+.menu-box-category::-webkit-scrollbar-thumb{
+  background-color: var(--colors--black);
+}
+.menu-box-category::-webkit-scrollbar-track{
+  display: block;
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+/**/
+
+.category-java-1{
+  visibility: visible;
+}
+.category-java-2{
+  margin-left: 0;
+  transition: 0.5s;
+}
+.stop-body{
+  overflow: hidden;
+}
+.allow-body{
+  overflow: scroll;
+}
+
+/*Loading Box*/
+.loading-box{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--colors--white);
+  z-index: 999999999;
+  top: 0;
+}
+.loading-img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+}
+/*item box*/
+.product-item-box{
+  width: 130px;
+}
+.product-img-item{
+  width: 130px;
+  object-fit: cover;
+}
+.product-grid-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px,0fr));
+  grid-template-rows: auto;
+  grid-row-gap: 15px;
+  grid-gap: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  justify-content: center;
+}

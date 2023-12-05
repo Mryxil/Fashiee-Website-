@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="All CSS/color_fonts_box_shadow_java_css.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="main_box_rate">
+        <p>How was your experience?</p>
+        <div class="rate">
+          <input type="radio" id="star5" name="rate" value="5" required/>
+          <label for="star5" title="5">★★★★★</label>
+          <input type="radio" id="star4" name="rate" value="4" required/>
+          <label for="star4" title="4">★★★★</label>
+          <input type="radio" id="star3" name="rate" value="3" required/>
+          <label for="star3" title="3">★★★</label>
+          <input type="radio" id="star2" name="rate" value="2" required/>
+          <label for="star2" title="2">★★</label>
+          <input type="radio" id="star1" name="rate" value="1" required/>
+          <label for="star1" title="1">★</label>
+        </div>
+        <textarea class="review_text" name="comment" required placeholder="Name:(your name) <br> then your review comment"></textarea>
+        <button class="submit_bt" onclick="submitReview()">Submit</button>
+        <a href="Home Dashboard.html">Home</a> 
+      </form>
+      
+  
+</body>
+    <script src="All JAVA/rating_java.js"></script>
+<style>
+    a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        width: 160px;
+        padding: 10px;
+        background-color: black;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        text-align: center;
+        font-family: var(--font-font-family-tilt-neon);
+    }
+    *{
+    margin: 0;
+    padding: 0;
+}
+p{
+    text-align: center;
+    font-family: var(--font-font-family-tilt-neon);
+}
+.review_text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    resize: none;
+    width: 200px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    outline: none;
+    padding: 10px;
+}
+.submit_bt{
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: bottom;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 190px;
+    font-family: var(--font-font-family-tilt-neon);
+}
+.main_box_rate{
+    display: block;
+    position: absolute;
+    width: 230px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.rate {
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 46px;
+    float: left;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.stars {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url('path/to/stars.png');
+}
+
+.stars[value="1"] {
+  background-position: 0 0;
+}
+
+.stars[value="2"] {
+  background-position: -18px 0;
+}
+
+.stars[value="3"] {
+  background-position: -36px 0;
+}
+
+.stars[value="4"] {
+  background-position: -54px 0;
+}
+
+.stars[value="5"] {
+  background-position: -72px 0;
+}
+
+</style>
+</html>
